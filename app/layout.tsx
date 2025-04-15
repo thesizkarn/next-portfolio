@@ -6,6 +6,7 @@ import HeaderNav from "@/components/layout/header-nav";
 import BackgroundEffect from "@/components/layout/background-effect";
 import MouseMoveEffect from "@/components/layout/mouse-move-effect";
 import Footer from "@/components/layout/footer";
+import { Toaster } from "@/components/ui/sonner";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -48,6 +49,7 @@ export default function RootLayout({
                 {children}
               </main>
               <Footer />
+              <Toaster />
             </div>
           </div>
         </ThemeProvider>

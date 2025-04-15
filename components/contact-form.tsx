@@ -58,6 +58,7 @@ export default function ContactForm() {
         toast.success("Votre message a été envoyé avec succès.");
         form.reset();
       } else {
+        console.error(response);
         throw new Error("Erreur lors de l'envoi");
       }
     } catch (error) {
